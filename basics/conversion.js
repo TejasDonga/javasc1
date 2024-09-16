@@ -15,7 +15,9 @@ const user = "Tejas"
 const userLoggin = Boolean(user)
 console.log(userLoggin);
 console.log(typeof userLoggin);
-
+12
+12
+12
 // 1 => true ; 0 => false
 //"Tejas" => true
 // "" => false;
