@@ -18,5 +18,4 @@ const func = function () {
     return "HELLO"
 }
 
-console.table([age, bigNumber,myName, adult,nan,undefine,symble,object])
-
+// console.table([age, bigNumber,myName, adult,nan,undefine,symble,object])
