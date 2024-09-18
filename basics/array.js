@@ -35,3 +35,27 @@ console.log(arr);
 
 const fullarr = arr1.concat(arr);
 console.log(fullarr);
+
+        // combine Array
+
+let num1 = [1,2,3,4]
+let num2 = [5,6,7]
+let num3 = [8,9]
+
+const all = [...num1,...num2,...num3]
+console.log(all);
+
+
+console.log(Array.from("12345")); 
+
+
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+
+console.log(Array.of(score1,score2,score3));
+
+
+const numArray = [1,2,[3,4,[5,6,[7,8,[9]]]]]
+const fullArray = numArray.flat(Infinity)
+console.log(fullArray);
