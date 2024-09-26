@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>     
+</head>
+<body style="background-color: #29292b; color: white; ">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addLang(langName) {
+        const li = document.createElement('li');
+        console.log(li);
+        li.innerHTML = langName
+        document.querySelector('.language').appendChild(li)
+    }
+    addLang('java')
+    addLang('ruby')
+    addLang('python')
+
+    function newmethod(langName) {
+        const newLi = document.createElement("li")
+        newLi.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(newLi)
+    }
+    newmethod('C++')
+
+    //Edit
+    const editfirst = document.querySelector('li:first-child')
+    // editfirst.innerHTML = 'JS'
+    const newLi = document.createElement('li')
+    newLi.textContent = "HTML"
+    editfirst.replaceWith(newLi)
+
+    const editsecond = document.querySelector('li:nth-child(2)')
+    editsecond.outerHTML = '<li>CSS</li>'
+
+    // remove 
+    const removes = document.querySelector('li:nth-child(3)')
+    removes.remove()
+</script>
+</html>
