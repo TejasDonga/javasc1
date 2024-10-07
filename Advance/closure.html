@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #323232;">
+    <button id="orange">lightblue</button>
+    <button id="green">green</button>
+</body>
+
+<script>
+    function outer() {
+        const name = 'tejas'
+        function inner() {
+            console.log(name);
+        }
+        inner()
+    }
+    outer()
+
+    function clickHandeler(color) {
+        
+        return function (){
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+    document.querySelector('#orange').onclick = clickHandeler('lightblue')
+    document.querySelector('#green').onclick = clickHandeler('green')
+</script>
+</html>
