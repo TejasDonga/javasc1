@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .modal {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      /* Modal Content */
+      .modal-content {
+        background-color: #121212;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%; /* Set width */
+        font-size: 18px; /* Customize the text size */
+      }
+      .modal-content p {
+        font-size: 25px;
+      }
+
+      /* The Close Button */
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .ok {
+        height: 30px;
+        width: 100px;
+        font-size: 20px;
+        transform: translateX(0px);
+        transition: all 0.1s linear;
+        background-color: lightblue;
+        text-align: center;         
+        cursor: pointer; 
+      }
+
+      .ok:hover {
+        transform: translateX(400px); 
+      }
+    </style>
+  </head>
+  <body style="background-color: #121212; color: whitesmoke">
+    <h1></h1>
+    <button id="myButton" style="height: 40px; width: 200px">click Me</button>
+    <div id="customAlert" class="modal">
+      <div class="modal-content">
+        <!-- <span id="closeBtn" class="close">&times;</span> -->
+        <p>Are you sure about that 😳?</p>
+        <button class="ok">Yes</button>
+      </div>
+    </div>
+  </body>
+
+  <script src="get_set.js"></script>
+</html>
